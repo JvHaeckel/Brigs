@@ -1,0 +1,16 @@
+
+
+body{
+  /*  background: ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fieldeset{
+  
+    padding: 2px;
+    margin: 5px;
+    max-width: max-content;
+    height: 50px;
+}
