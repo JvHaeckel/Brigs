@@ -1,16 +1,44 @@
-
-
-body{
-  /*  background: ; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  background-image: linear-gradient(to top, white, #b30dd9);
+  font-size: 19px;
 }
 
-.fieldeset{
+fieldset {
+  box-shadow: 10px 8px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+ 
+}
+
+header {
+
+  width: auto;
+  height: 120px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 10px 8px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  padding: 1px;
   
-    padding: 2px;
-    margin: 5px;
-    max-width: max-content;
-    height: 50px;
+}
+
+nav {
+  display: flex;
+  
+  align-items: center; /* Deixou os itens no meio do Header */
+  gap: 20px;           /* Deixou os itens (whats,insta e Menu) separados no Header */
+  
+}
+
+#Logo {
+  display: flex;
+  width: 100px;
+  padding: 10px;
+  justify-content: flex-start;
+}
+
+input{
+  margin: 4px;  /* Serviu para tirar o br do html e assim pude distanciar as frases */
+  display: flex;
+  flex-direction: column-reverse;
+  
 }
