@@ -13,32 +13,27 @@ fieldset {
 }
 
 header {
-
-  width: 40%;
+  width: 60%;
   height: 120px;
   display: flex;
   justify-content: space-around;
   box-shadow: 10px 8px 12px rgba(0, 0, 0, 0.25);
   border-radius: 100px;
+  border-style: solid;
   padding: 0px;
   margin-left: 400px;  /* Coloquei o header no meio da página */
   margin-bottom: 40px;
+  background-color: aliceblue;
   
 }
 
-.blocos {
-  display: flex;
-  align-items: center;
- 
- 
-}
 
 nav {
   display: flex;
   align-items: center; /* Deixou os itens no meio do Header */
   gap: 25px;           /* Deixou os itens (whats,insta e Menu) separados no Header */
   
-  
+
 }
 
 #Logo {
@@ -46,6 +41,14 @@ nav {
   width: 100px;
   padding: 10px;
   justify-content: flex-start;
+}
+
+/* Conteúdo da página: as perguntas*/
+.blocos {
+  display: flex;
+  justify-content: center;  /* Deixou as perguntas no meio da página*/
+ 
+ 
 }
 
 input{
