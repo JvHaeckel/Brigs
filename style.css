@@ -1,31 +1,39 @@
 body {
   background-image: linear-gradient(to top, white, #b30dd9);
   font-size: 19px;
+  
 }
 
 fieldset {
-  box-shadow: 10px 8px 12px rgba(0, 0, 0, 0.25);
+  box-shadow: 20px 12px 15px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
- 
+  margin-bottom: 40px;
+  margin-right: 950px;  /* Puxou a margem para perto dos textos */
 }
 
 header {
 
-  width: auto;
+  width: 40%;
   height: 120px;
   display: flex;
   justify-content: space-around;
   box-shadow: 10px 8px 12px rgba(0, 0, 0, 0.25);
   border-radius: 100px;
-  padding: 1px;
+  padding: 0px;
+  margin-left: 400px;  /* Coloquei o header no meio da página */
+  margin-bottom: 40px;
   
+}
+
+section {
+  display: flex;
+  align-items: ;
 }
 
 nav {
   display: flex;
-  
   align-items: center; /* Deixou os itens no meio do Header */
-  gap: 20px;           /* Deixou os itens (whats,insta e Menu) separados no Header */
+  gap: 25px;           /* Deixou os itens (whats,insta e Menu) separados no Header */
   
 }
 
