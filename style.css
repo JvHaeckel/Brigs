@@ -7,8 +7,9 @@ body {
 fieldset {
   box-shadow: 20px 12px 15px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  margin-bottom: 40px;
-  margin-right: 950px;  /* Puxou a margem para perto dos textos */
+  margin-bottom: 5%;   /* Espaçou cada fieldset assim pude tirar os <br> do HTML*/
+  margin-right: 5%;  /* Puxou a margem para perto dos textos */
+  
 }
 
 header {
@@ -25,9 +26,11 @@ header {
   
 }
 
-section {
+.blocos {
   display: flex;
-  align-items: ;
+  align-items: center;
+ 
+ 
 }
 
 nav {
@@ -46,7 +49,7 @@ nav {
 
 input{
   margin: 4px;  /* Serviu para tirar o br do html e assim pude distanciar as frases */
+  flex-direction: column;
   display: flex;
-  flex-direction: column-reverse;
   
 }
