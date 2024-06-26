@@ -1,12 +1,18 @@
+/* Ser*/
+
+
 body {
   background-image: linear-gradient(to top, white, #b30dd9);
-  font-size: 19px;
-  
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
 }
 
 form{
-
-  
+display: flex;
+flex-direction: column; /* Assim deixou o header alinhado com os fieldsets*/
+align-items: center;
+justify-content: center;
 }
 
 fieldset {
@@ -17,8 +23,9 @@ fieldset {
   
 }
 
+                   /* Cabeçalho */
 header {
-  width: 60%;
+  width: 50%;
   height: 120px;
   display: flex;
   justify-content: space-around;
@@ -47,7 +54,9 @@ nav {
   justify-content: flex-start;
 }
 
-/* Conteúdo da página: as perguntas*/
+/* 
+                 Conteúdo da página: as perguntas
+*/
 
 .blocos {
   display: flex;
@@ -56,14 +65,64 @@ nav {
 }
 
 input{
-  margin: 4px;  /* Serviu para tirar o br do html e assim pude distanciar as frases */
-  flex-direction: column;
-  display: flex;
+  margin: 15px;  /* Serviu para tirar o br do html e assim pude distanciar as frases */
+  
   
 }
 
-#button{
-padding: 20px;
-display: flex;
-justify-content: center;
+                    /* Botão*/
+button{
+  font-size: 50px; /*altera o tamanho da fonte do botão*/
+ /* Aumentou a largura */
+ height: 60px; /*altera a altura do botão*/
+ width: 250px; /*altera a largurado botão*/
+border-radius: 50px;
+background-color: rgba(244, 6, 153, 0.664);
+
+
+
+
+
+
+
+transition: all 300ms ease-out;
+}
+
+/* botão terá o tamanho colocado inicialmente, porém quando o usuário passar o mouse por cima do botão ele aumenta de tamanho.*/
+button:hover {
+  width: 300px;
+  height: 80px;
+ }
+
+
+ /* Rodapé*/
+
+
+ footer {
+  width: 60%;
+  height: 120px;
+  margin: 20px;  /* Usei para afastar do Button*/
+  display: flex;
+  justify-content: space-around;
+ background-color: rgb(95, 95, 91);
+  padding: 0px;
+  margin-left: 400px;  /* Coloquei o header no meio da página */
+  margin-bottom: 40px;
+
+  
+}
+
+nav {
+  display: flex;
+  align-items: center; /* Deixou os itens no meio do Header */
+  gap: 25px;           /* Deixou os itens (whats,insta e Menu) separados no Header */
+  
+
+}
+
+#Logo {
+  display: flex;
+  width: 100px;
+  padding: 10px;
+  justify-content: flex-start;
 }
