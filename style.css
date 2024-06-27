@@ -1,31 +1,55 @@
 /* Ser*/
 
-
 body {
   background-image: linear-gradient(to top, white, #b30dd9);
   font-size: 25px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-form{
-display: flex;
-flex-direction: column; /* Assim deixou o header alinhado com os fieldsets*/
-align-items: center;
-justify-content: center;
-}
-
-fieldset {
-  box-shadow: 20px 12px 15px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  margin-bottom: 5%;   /* Espaçou cada fieldset assim pude tirar os <br> do HTML*/
-  margin-right: 5%;  /* Puxou a margem para perto dos textos */
+form {
+  display: flex;
+  flex-direction: column;
+  /* Assim deixou o header alinhado com os fieldsets*/
+  align-items: center;
+  justify-content: center;
   
 }
 
-                   /* Cabeçalho */
+
+/*  */
+fieldset {
+  box-shadow: 20px 12px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin-bottom: 25px;
+  /* Espaçou cada fieldset assim pude tirar os <br> do HTML*/
+  margin-right: 10px;
+  /* Puxou a margem para perto dos textos */
+  width: fit-content;
+  height: min-content;
+}
+
+
+.blocos {
+  
+  justify-content: center;
+  /* Deixou as perguntas no meio da página*/
+  align-items: center;
+  width: 80%; /* 80% do Fieldset */
+  height: min-content;
+}
+
+input {
+  margin: 10px;
+  /* Serviu para afastar as frases dos Blocos e assim ficou melhor de ler*/
+
+
+}
+
+/* Cabeçalho */
 header {
-  width: 50%;
+  width: 50%;  /* Vai ter 50% do elemento pai*/
   height: 120px;
   display: flex;
   justify-content: space-around;
@@ -33,17 +57,18 @@ header {
   border-radius: 100px;
   border-style: solid;
   padding: 0px;
-  margin-left: 400px;  /* Coloquei o header no meio da página */
+ 
+  /* Distanciar o Header do Fieldset */
   margin-bottom: 40px;
 
-  
 }
 
 nav {
   display: flex;
-  align-items: center; /* Deixou os itens no meio do Header */
-  gap: 25px;           /* Deixou os itens (whats,insta e Menu) separados no Header */
-  
+  align-items: center;
+  /* Deixou os itens no meio do Header */
+  gap: 25px;
+  /* Deixou os itens (whats,insta e Menu) separados no Header */
 
 }
 
@@ -58,65 +83,54 @@ nav {
                  Conteúdo da página: as perguntas
 */
 
-.blocos {
-  display: flex;
-  justify-content: center;  /* Deixou as perguntas no meio da página*/
- 
-}
 
-input{
-  margin: 15px;  /* Serviu para tirar o br do html e assim pude distanciar as frases */
-  
-  
-}
-
-                    /* Botão*/
-button{
-  font-size: 50px; /*altera o tamanho da fonte do botão*/
- /* Aumentou a largura */
- height: 60px; /*altera a altura do botão*/
- width: 250px; /*altera a largurado botão*/
-border-radius: 50px;
-background-color: rgba(244, 6, 153, 0.664);
-
-
-
-
-
-
-
-transition: all 300ms ease-out;
+/* Botão*/
+button::before {
+  font-size: 35px;
+  /*altera o tamanho da fonte do botão*/
+  /* Aumentou a largura */
+  height: 50px;
+  /*altera a altura do botão*/
+  width: 200px;
+  /*altera a largurado botão*/
+  border-radius: 50px;
+  background-color: rgba(244, 6, 153, 0.664);
+  content: 'Enviar';
+  display: block;
+  transition: all 300ms ease-out;
 }
 
 /* botão terá o tamanho colocado inicialmente, porém quando o usuário passar o mouse por cima do botão ele aumenta de tamanho.*/
-button:hover {
+button::after {
   width: 300px;
   height: 80px;
- }
+  font-size: 50px;  /* Mudou o tamanho da fonte*/
+  background-color: green; /* Mudou a cor*/
+  content: "Obrigado";
+}
 
-
- /* Rodapé*/
-
-
- footer {
-  width: 60%;
-  height: 120px;
-  margin: 20px;  /* Usei para afastar do Button*/
+/* Rodapé*/
+footer {
+  width: 90%;
+  height: 15%;
+  margin: 20px;
+  /* Usei para afastar do Button*/
   display: flex;
-  justify-content: space-around;
- background-color: rgb(95, 95, 91);
-  padding: 0px;
-  margin-left: 400px;  /* Coloquei o header no meio da página */
-  margin-bottom: 40px;
+  justify-content: space-between;
+  background-color: rgb(95, 95, 91);
+  padding: 100px;
 
   
+
 }
 
 nav {
   display: flex;
-  align-items: center; /* Deixou os itens no meio do Header */
-  gap: 25px;           /* Deixou os itens (whats,insta e Menu) separados no Header */
-  
+  align-items: center;
+  /* Deixou os itens no meio do Header */
+  gap: 25px;
+  /* Deixou os itens (whats,insta e Menu) separados no Header */
+
 
 }
 
@@ -126,3 +140,65 @@ nav {
   padding: 10px;
   justify-content: flex-start;
 }
+
+
+
+
+
+
+/* RESPONSIVIDADE Form*/
+@media only screen and (max-device-width: 1200px) {
+  form {
+    width: 900px;
+    font-size: medium;
+  }
+}
+
+@media only screen and (max-device-width: 900px) {
+  form {
+    width: 600px;
+    font-size: x-small;
+  }
+}
+
+
+@media only screen and (max-device-width: 600px) {
+  form {
+    width: 400px;
+    font-size: medium;
+  }
+}
+
+@media only screen and (max-device-width: 300px) {
+  form {
+    width: auto;
+    font-size: small;
+  }
+}
+
+
+/* RESPONSIVIDADE fieldset*/
+@media only screen and (max-device-width: 1200px) {
+  fieldset {
+    width: 900px;
+  }
+}
+
+@media only screen and (max-device-width: 900px) {
+  fieldset {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-device-width: 600px) {
+  fieldset {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-device-width: 300px) {
+  fieldset {
+    width: auto;
+  }
+}
+/* RESPONSIVIDADE */
