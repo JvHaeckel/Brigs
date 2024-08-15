@@ -37,24 +37,28 @@
         <section class="blocos">
             <fieldset>
                 <h1> Qual sabor mais gostou ? </h1>
-                <input type="checkbox" value="Cacau 70%"> Cacau 70% <br>
-                <input type="checkbox" value="Ninho (Brigadeiro Branco)">Ninho <br>
-                <input type="checkbox" value=" Banana Fit (sem açúcar e sem leite condensado)">Banana Fit (sem leite
-                condensado) <br>
-                <input type="checkbox" value="Bem casado (Cacau 70% + Ninho)">Bem casado (Cacau 70% + Ninho) <br>
-                <input type="checkbox" value="Coco (Beijinho)">Coco (Beijinho) <br>
-                <input type="checkbox" value="Ninho Rosé">Casado Fit (Cacau 70% + Banana) <br>
+                <input type="radio" value="Cacau 70%"> Cacau 70% <br>
+                <input type="radio" value="Ninho (Brigadeiro Branco)">Ninho <br>
+                <input type="radio" value=" Banana Fit (sem açúcar e sem leite condensado)">Banana Fit (sem açúcar) <br>
+                <input type="radio" value="Bem casado (Cacau 70% + Ninho)">Bem casado (Cacau 70% + Ninho) <br>
+                <input type="radio" value="Coco (Beijinho)">Coco (Beijinho) <br>
+                <input type="radio" value="Ninho Rosé">Casado Fit (Cacau 70% + Banana) <br>
             </fieldset>
 
             <fieldset>
                 <h1>Algum sabor não lhe <br> agradou ?</h1>
-                <label for=""><input type="radio" value="Cacau 70%"> Cacau 70% </label> <br>
-                <input type="checkbox" value="Ninho (Brigadeiro Branco)"> Ninho (Brigadeiro Branco) <br>
-                <input type="checkbox" value="Banana Fit (sem açúcar e sem leite condensado)"> Banana Fit (sem
+
+                <div id="Cacau 70%">  <label> </label>
+                    <input type="radio" value="Cacau 70%"> Cacau 70%
+                <p> This field is required</p>
+                </div>
+               
+              <label><input type="radio" value="Ninho (Brigadeiro Branco)"> Ninho (Brigadeiro Branco)</label>  <br>
+                <input type="radio" value="Banana Fit (sem açúcar e sem leite condensado)"> Banana Fit (sem
                 açúcar e sem leite condensado) <br>
-                <input type="checkbox" value="Bem casado (Cacau 70% + Ninho)"> Bem casado (Cacau 70% + Ninho) <br>
-                <input type="checkbox" value="Coco (Beijinho)"> Coco (Beijinho) <br>
-                <input type="checkbox" value="Ninho Rosé"> Ninho Rosé <br>
+                <input type="radio" value="Bem casado (Cacau 70% + Ninho)"> Bem casado (Cacau 70% + Ninho) <br>
+                <input type="radio" value="Coco (Beijinho)"> Coco (Beijinho) <br>
+                <input type="radio" value="Ninho Rosé"> Ninho Rosé <br>
             </fieldset>
         </section>
 
@@ -149,24 +153,24 @@
 
 
     <footer>
-        <abbr title="LinkTree"> <a href="http://https://linktr.ee/brigsonho" target="_blank"> <img
+        <abbr title="LinkTree"> <a href="https://linktr.ee/brigsonho" target="_blank"> <img
                     src="Img/android-chrome-192x192.png" alt="Logo BrigSonho" id="Logo"></a></abbr>
 
-        <div>
-            <ul>
-                <li>Fale conosco
-                <li> &copy;
-                <li> &reg;
-
-            </ul>
-        </div>
+                    <div>
+                        <ul>
+                            <li> <a href="contact.html" target="_blank"> Fale conosco</a>
+                            <li> <a href="form.html" target="_blank">Formulário</a> 
+                            <li> &reg;
+            
+                        </ul>
+                    </div>
 
         <nav>
             <abbr title="Whatsapp"> <a href="https://abre.ai/brigswhats" target="_blank"> <img src="Img/Whats.png"
                         alt="Whatsapp logo associado a link"></a> </abbr>
 
             <abbr title="Instagram"> <a rel="stylesheet"
-                    href="https://www.instagram.com/brigsonho?igsh=a3JuYnpzMGV5bDlu&utm_source=qr " target="_blank"
+                    href="https://www.instagram.com/brigsonho" target="_blank"
                     rel="external">
                     <img src="Img/Insta-removebg-preview.png" alt=""> </a> </abbr>
             <abbr title="Menu"> <a rel="stylesheet" href="https://abre.ai/menubrigs " target="_blank" rel="external">
@@ -174,6 +178,8 @@
         </nav>
 
     </footer>
+
+  
 
     <script src="script.js"></script>
 </body>

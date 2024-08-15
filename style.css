@@ -79,10 +79,21 @@ nav {
   justify-content: flex-start;
 }
 
-/* 
-                 Conteúdo da página: as perguntas
-*/
+/*         Conteúdo da página: as perguntas        */
 
+
+
+/*         Formulário de contato        */
+
+.form2{
+  font-size: small;
+
+
+  input[type=radio]{   /*Perceba que dentro da clase coloquei essa estrutura que permite modificar o tamanho do input usando escala sem 
+    precisar atribuir um id a ele */
+    transform: scale(2);
+  }
+}
 
 /* Botão*/
 button {
