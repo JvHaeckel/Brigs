@@ -8,35 +8,34 @@ body {
   align-items: center;
 }
 
-form {
+.form1 {
   display: flex;
   flex-direction: column;
   /* Assim deixou o header alinhado com os fieldsets*/
   align-items: center;
   justify-content: center;
-  
+
 }
 
 
 /*  */
-fieldset {
+.perguntas {
   box-shadow: 20px 12px 15px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  margin-bottom: 25px;
-  /* Espaçou cada fieldset assim pude tirar os <br> do HTML*/
-  margin-right: 10px;
-  /* Puxou a margem para perto dos textos */
+  margin-bottom: 25px;  /* Espaçou cada fieldset assim pude tirar os <br> do HTML*/
+  margin-right: 10px;  /* Puxou a margem para perto dos textos */
   width: fit-content;
   height: min-content;
 }
 
 
 .blocos {
-  
+
   justify-content: center;
   /* Deixou as perguntas no meio da página*/
   align-items: center;
-  width: 80%; /* 80% do Fieldset */
+  width: 80%;
+  /* 80% do Fieldset */
   height: min-content;
 }
 
@@ -47,9 +46,10 @@ input {
 
 }
 
-/* Cabeçalho */
+/* Cabeçalho HEADER*/
 header {
-  width: 50%;  /* Vai ter 50% do elemento pai*/
+  width: 50%;
+  /* Vai ter 50% do elemento pai*/
   height: 120px;
   display: flex;
   justify-content: space-around;
@@ -57,7 +57,7 @@ header {
   border-radius: 100px;
   border-style: solid;
   padding: 0px;
- 
+
   /* Distanciar o Header do Fieldset */
   margin-bottom: 40px;
 
@@ -83,17 +83,7 @@ nav {
 
 
 
-/*         Formulário de contato        */
 
-.form2{
-  font-size: small;
-
-
-  input[type=radio]{   /*Perceba que dentro da clase coloquei essa estrutura que permite modificar o tamanho do input usando escala sem 
-    precisar atribuir um id a ele */
-    transform: scale(2);
-  }
-}
 
 /* Botão*/
 button {
@@ -119,9 +109,9 @@ button:hover {
   color: green;
 }
 
-/* Rodapé*/
+/*   RODAPÉ  */
 footer {
-  width: 90%;
+  width: 70%;
   height: 15%;
   margin: 20px;
   /* Usei para afastar do Button*/
@@ -130,10 +120,9 @@ footer {
   background-color: rgb(95, 95, 91);
   padding: 100px;
 
-  
-
 }
 
+/*  NAVBAR  */
 nav {
   display: flex;
   align-items: center;
@@ -152,63 +141,121 @@ nav {
 }
 
 
+/*         Formulário de CONTATO     */
 
+.form2 {
+  font-size: small;
+  padding: 0;
+  
 
-
-
-/* RESPONSIVIDADE Form*/
-@media only screen and (max-device-width: 1200px) {
-  form {
-    width: 900px;
-    font-size: medium;
+  input[type=radio] {
+    /*Perceba que dentro da clase coloquei essa estrutura que permite modificar o tamanho do input usando escala sem 
+    precisar atribuir um id a ele */
+    transform: scale(2);
   }
 }
 
-@media only screen and (max-device-width: 900px) {
-  form {
-    width: 600px;
-    font-size: x-small;
+fieldset {
+  box-shadow: 20px 12px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  justify-content: flex-start;
+  height: min-content;
+}
+
+
+label {
+  color: white;
+}
+
+.input-contact{
+  border-radius: 5px;
+}
+
+#text-area-contact{
+  display: flex;
+  align-items: center;  /* Colocou a Label mensagem no meio do Text Area  */
+  
+}
+
+input[type='text'], input[type='email'], textarea {
+  width: 80%;
+  padding: 5px;
+  border: 1px solid color(srgb-linear rgb(12, 70, 218) green blue);
+}
+
+/* Ao clicar  destaca as bordas do input e textarea */
+.input-contact:focus, textarea:focus {
+  outline: 1px solid color(srgb rgba(10, 182, 182, 0.806) green blue); 
+  border: 1px solid color(srgb red green blue)
+}
+
+
+input[type='text'].form-error, input[type='email'].form-error {
+  border: 1px solid var(--red);
+}
+
+.required-input {
+  color: var(--green);
+}
+
+.form-alert {
+  display: none;  /* Fez os textos sumirem */
+  color: red;
+}
+
+
+
+
+
+
+
+
+/*     RESPONSIVIDADE        RESPONSIVIDADE      RESPONSIVIDADE         RESPONSIVIDADE     */
+
+
+/* RESPONSIVIDADE Form*/
+
+
+@media only screen and (max-device-width: 1200px) {
+ 
+  header, footer {
+    width: 70%;
   }
+}
+
+
+/*  PAROU AQUI */
+@media only screen and (max-device-width: 722px) {
+  footer{}
 }
 
 
 @media only screen and (max-device-width: 600px) {
-  form {
+  .form1.form2 {
     width: 400px;
     font-size: medium;
   }
 }
 
 @media only screen and (max-device-width: 300px) {
-  form {
+  .form1.form2 {
     width: auto;
     font-size: small;
   }
 }
 
-
-/* RESPONSIVIDADE fieldset*/
-@media only screen and (max-device-width: 1200px) {
-  fieldset {
-    width: 900px;
+  @media only screen and (max-device-width: 200px) {
+    .form1.form2 {
+      width: auto;
+      font-size: small;
+    }
   }
+    @media only screen and (max-device-width: 150px) {
+      .form1.form2 {
+        width: auto;
+        font-size: small;
+      }
+
 }
 
-@media only screen and (max-device-width: 900px) {
-  fieldset {
-    width: 600px;
-  }
-}
 
-@media only screen and (max-device-width: 600px) {
-  fieldset {
-    width: 400px;
-  }
-}
-
-@media only screen and (max-device-width: 300px) {
-  fieldset {
-    width: auto;
-  }
-}
-/* RESPONSIVIDADE */
