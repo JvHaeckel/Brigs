@@ -84,15 +84,14 @@ nav {
 
 
 
-
 /* Botão*/
 button {
-  font-size: 35px;
+  font-size: 25px;
   /*altera o tamanho da fonte do botão*/
   /* Aumentou a largura */
-  height: 50px;
+  height: 30px;
   /*altera a altura do botão*/
-  width: 200px;
+  width: 100px;
   /*altera a largurado botão*/
   border-radius: 50px;
   background-color: rgba(244, 6, 153, 0.664);
@@ -103,9 +102,9 @@ button {
 
 /* botão terá o tamanho colocado inicialmente, porém quando o usuário passar o mouse por cima do botão ele aumenta de tamanho.*/
 button:hover {
-  width: 300px;
-  height: 80px;
-  font-size: 50px;
+  width: 150px;
+  height: 50px;
+  font-size: 40px;
   color: green;
 }
 
@@ -141,12 +140,35 @@ nav {
 }
 
 
+
 /*         Formulário de CONTATO     */
+/*         Formulário de CONTATO     */
+/*         Formulário de CONTATO     */
+/*         Formulário de CONTATO     */
+/*         Formulário de CONTATO     */
+/*         Formulário de CONTATO     */
+/*         Formulário de CONTATO     */
+
+#fieldsetForm2{
+ padding: 25px;
+ border-color: rgb(239, 219, 5);
+ border-width: 3px;
+ border-radius: 25px;
+ display: flex;
+ flex-direction: column;
+align-content: center;
+}
+
+#inputs{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
 .form2 {
   font-size: small;
   padding: 0;
-  
+ 
 
   input[type=radio] {
     /*Perceba que dentro da clase coloquei essa estrutura que permite modificar o tamanho do input usando escala sem 
@@ -179,8 +201,9 @@ label {
 
 input[type='text'], input[type='email'], textarea {
   width: 80%;
-  padding: 5px;
+  padding: 8px;
   border: 1px solid color(srgb-linear rgb(12, 70, 218) green blue);
+  margin-top: 10px;
 }
 
 /* Ao clicar  destaca as bordas do input e textarea */
